@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #dfe9f5;
+}
+.wrapper {
+  max-width: 100%;
+  width: 400px;
+  padding: 2rem 2rem;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.input-group {
+  width: 92%;
+  margin: 30px auto;
+}
+h1 {
+  font-size: 2rem;
+  color: #07001f;
+  margin-bottom: 1.8rem;
+}
+
+.picker {
+  text-align: left;
+  position: relative;
+  display: inline-block;
+}
+
+form input {
+  width: 92%;
+  outline: none;
+  border: 1px solid #fff;
+  padding: 12px 20px;
+  border-radius: 20px;
+  background: #e4e4e4;
+}
+input:focus {
+  border: 1px solid rgb(192, 192, 192);
+}
+input[type="submit"] {
+  font-size: 1rem;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  width: 90%;
+  background: rgba(17, 107, 143);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.4s;
+}
+input[type="submit"]:hover {
+  background: rgba(17, 107, 143, 0.8);
+}
+#color {
+  display: none;
+}
+.picker::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #e4e4e4;
+  background: rgba(17, 107, 143);
+  left: 160%;
+  top: -15%;
+}
+.s input {
+  width: 58%;
+}
+.date {
+  text-align: left;
+  display: inline-block;
+}
+.f {
+  text-align: left;
+}
+.member a {
+  text-decoration: none;
+  color: rgba(17, 107, 143);
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.4s;
+}
+.member a:hover {
+  border-bottom: 2px solid rgba(17, 107, 143);
+}
