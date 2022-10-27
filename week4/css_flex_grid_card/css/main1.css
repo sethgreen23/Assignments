@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca";
+  font-size: 15px;
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+.container {
+  max-width: 1440px;
+  margin: 100px 10%;
+}
+.cards {
+  display: grid;
+  border-radius: 8px;
+  grid-template-columns: repeat(3, minmax(10rem, 23rem));
+  justify-content: center;
+}
+.card_1 {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.card_2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.card_3 {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.card_heading,
+.btn {
+  color: hsl(0, 0%, 95%);
+}
+
+.card_content {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  color: hsla(0, 0%, 100%, 0.75);
+  grid-row-gap: 30px;
+}
+.card {
+  padding: 50px 50px 10px 50px;
+  display: grid;
+  grid-template-rows: 1fr 250px;
+}
+.card_btn {
+  align-self: end;
+  margin-bottom: 50px;
+}
+.card_heading {
+  font-family: "Big Shoulders Display";
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+.card_img img {
+  height: auto;
+}
+.btn {
+  background-color: transparent;
+  padding: 15px 40px;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 50px;
+  cursor: pointer;
+}
+.card_text {
+  line-height: 2;
+}
+@media (max-width: 800px) {
+  .card {
+    padding: 40px;
+  }
+  .card_heading {
+    font-size: 40px;
+  }
+  .btn {
+    padding: 10px 25px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    margin: 100px 20%;
+  }
+  .card {
+    border-radius: 12px;
+  }
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 25rem));
+    grid-row-gap: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    margin: 100px 10%;
+  }
+}
